@@ -1,0 +1,66 @@
+.home {
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-rows: max-content;
+
+    .navbar-home {
+        position: relative;
+        background: $c-grey-100;
+        z-index: 50;
+
+        @media screen and (min-width:$desktop-lg) {
+            margin-left: 4.4rem;
+        }
+    }
+
+    .content-home {
+        background: transparent;
+
+        @media screen and (min-width:$desktop-lg) {
+            margin-left: 4.4rem;
+        }
+
+        padding: 1.2rem 2rem 0rem 2rem;
+
+        @media screen and (max-width:$desktop-sm) {
+            padding: 1.2rem 1rem 0rem 1rem;
+        }
+
+        @media screen and (max-width:$mobile) {
+            padding: 1.2rem 0rem 0rem 0rem;
+        }
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        .box-content-home {
+            background: $c-white;
+            box-shadow: 0px 1px 15px 1px $box-shadow-black;
+            padding: 1rem 0rem 1rem 0rem;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .content-home::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: $c-blue;
+        box-shadow: 0 0 1px $c-red;
+    }
+
+    .content-home::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 3px;
+    }
+}
+
+.sidebar-home {
+    position: fixed;
+    background: $c-white;
+    z-index: 100;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}

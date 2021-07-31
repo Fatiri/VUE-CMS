@@ -1,0 +1,13 @@
+.textarea-v1 {
+    width: 100%;
+    border: none;
+    border: 1px solid rgba(204, 204, 204, 0.585);
+    border-radius: 4px;
+    font-size: 16px;
+    // background-image: url('/../../assets/png/edit-box.svg');
+    padding: 1%;
+    padding-left: 1.5%;
+    outline-style: none;
+    height: 25px;
+    box-shadow: 0px 1px 5px $box-shadow-black;
+}

@@ -1,0 +1,14 @@
+.badge-v1{
+    border-radius: 50% 50% 0% 50%;
+	width: 18px;
+	height: 18px;
+    padding:2px;
+	background: $c-red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-size: 9px;
+	transition: all .3s;
+    color: $c-white;
+    z-index: 200;
+}

@@ -1,0 +1,173 @@
+.container-table-v1 {
+    .table-v1 {
+        width: 100%;
+        max-width: 100%;
+        overflow: scroll;
+        border-radius: 0.3rem;
+        box-shadow: 0px -5px 15px 1px $box-shadow-black;
+        font-size: 14px;
+        min-height: 460px;
+
+        .table1 {
+            color: #6e6b7b;
+            border-collapse: collapse;
+            min-width: 100%;
+
+            tr th {
+                background: rgb(193, 193, 250);
+                color: #3b3a3d;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            tr td {
+                padding: 8px 20px;
+                text-align: center;
+                border-bottom: 1px solid #6e6b7b1b;
+                max-height: 1rem;
+                color: #6e6b7b;
+            }
+
+            tr:hover td {
+                background: rgba(193, 193, 250, 0.53);
+                max-height: 1rem;
+                cursor: pointer;
+            }
+
+            th {
+                background: $c-grey-200;
+                font-weight: normal;
+                height: 2rem;
+                max-height: 2rem;
+                position: sticky;
+                top: 0;
+            }
+
+            td {
+                height: 1.5rem;
+                max-height: 1.5rem;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+              }
+        }
+    }
+
+    .table-v1::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: $c-blue;
+        box-shadow: 0 0 1px $c-blue;
+    }
+
+    .table-v1::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 1px;
+        height: 1px;
+    }
+
+    .loader-table-v1{
+        display: grid;
+        justify-content: center;
+        margin-top: 12.5rem;
+        gap: 1.5rem;
+        .icon-empty-data{
+            display: flex;
+            justify-content: center;
+            transform: scale(3);
+        }
+        .spinner{
+            display: flex;
+        }
+        .txt-notfound{
+          font-size: 18px;    
+        }
+    }
+
+    .menu-table-v1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0rem 1rem 1rem 1rem;
+        max-height: 2.5rem;
+        min-height: 2.5rem;
+
+        .perpage-table-v1 {
+            display: flex;
+            justify-self: left;
+            gap: 0.5rem;
+
+            .perpage-title {
+                padding-top: 0.5rem;
+                font-size: 14px;
+            }
+        }
+
+        .filter-table-v1 {
+            display: flex;
+            justify-self: right;
+            padding-top: 1px;
+            gap: 2px;
+
+            .search-icon {
+                cursor: pointer;
+                transform: scale(1.1);
+                margin-top: 0.5rem;
+            }
+        }
+
+        @media screen and (max-width:$mobile) {
+            .filter-table-v1 {
+              max-height: 2rem;
+            }
+        }
+    }
+
+    .pagination-table-v1 {
+        display: flex;
+        background: $c-white;
+        justify-content: center;
+        padding: 2rem 1rem 1rem 1rem;
+        align-items: center;
+
+        .pagination-page {
+            text-align: center;
+            width: 3rem;
+            font-size: 15px;
+        }
+
+        .pagination-btn-left {
+            display: flex;
+            cursor: pointer;
+            transition: ease .2s;
+            transform: scale(1.2);
+            align-items: center;
+        }
+
+        .pagination-btn-left:active {
+            cursor: pointer;
+            transform: translateY(4px);
+        }
+
+        .pagination-btn-right {
+            display: flex;
+            cursor: pointer;
+            transition: ease .2s;
+            transform: scale(1.2);
+            align-items: center;
+        }
+
+        .pagination-btn-right:active {
+            transform: translateY(4px);
+        }
+
+        .pagination-last {
+            position: static;
+            margin-left: 2rem;
+        }
+    }
+
+    @media screen and (max-width:$mobile) {
+        .pagination-table-v1 {
+            padding: 0.5rem 1rem 1rem 1rem;
+        }
+    }
+}
